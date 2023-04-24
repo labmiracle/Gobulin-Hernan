@@ -1,4 +1,4 @@
-//Crea una función que reciba una frase como cadena y devuelva la palabra más larga
+//Crear una función que reciba una frase como cadena y devuelva la palabra más larga
 
 function palabraMasLarga(str) {
 	let palabras = str.split(' ');
@@ -16,7 +16,7 @@ function palabraMasLarga(str) {
 
 console.assert(palabraMasLarga('Erase una vez que se era') === 'Erase');
 
-//Crea una función que reciba una cadena y lo devuelva con todas las palabras con su primera letra mayúscula
+//Crear una función que reciba una cadena y lo devuelva con todas las palabras con su primera letra mayúscula
 function primeraMayuscula(str) {
 	let palabras = str.split(' ');
 	let nuevaCadena = '';
