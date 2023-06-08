@@ -1,0 +1,6 @@
+
+# Node modules folder excluded
+node_modules/
+
+# Coverage folder excluded
+coverage/
