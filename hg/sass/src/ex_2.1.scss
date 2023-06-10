@@ -1,0 +1,28 @@
+@mixin add-prefix($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+}
+
+@mixin add-fixed-margin-padding($margin, $padding) {
+	margin: $margin;
+	padding: $padding;
+}
+
+@mixin add-border-properties($width, $style, $color) {
+	border-width: $width;
+	border-style: $style;
+	border-color: $color;
+}
+
+// Examples of use
+.element {
+	@include add-prefix('border-radius', '3px');
+}
+
+.box {
+	@include add-fixed-margin-padding(15px, 20px);
+}
+
+.button {
+	@include add-border-properties(1px, solid, #062541ed);
+}
