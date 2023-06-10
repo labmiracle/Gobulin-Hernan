@@ -1,0 +1,14 @@
+// Nesting styles
+.container {
+	background-color: #ffffff;
+
+	.element {
+		font-size: 16px;
+		color: #062541ed;
+	}
+
+	.another-element {
+		font-size: 14px;
+		color: #43a89e;
+	}
+}

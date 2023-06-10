@@ -1,0 +1,9 @@
+// Variable definition
+$primary-color: #062541ed;
+$secondary-color: #ffffff;
+
+// Examples of use
+.element {
+	color: $primary-color;
+	background-color: $secondary-color;
+}

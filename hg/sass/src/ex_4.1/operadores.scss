@@ -1,0 +1,13 @@
+// Arithmetic operations
+.element {
+	width: 100px + 20px;
+	height: 200px - 50px;
+	font-size: 16px * 2;
+	line-height: 1.5;
+}
+
+// Logical operations
+.another-element {
+	display: if(3 < 5, block, none);
+	margin: (10px * 2) + 5px;
+}
