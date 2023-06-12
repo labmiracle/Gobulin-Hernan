@@ -4,13 +4,15 @@
 	border: none;
 	border-radius: 4px;
 	text-transform: uppercase;
+	font-family: 'Comic Sans MS', cursive;
+	font-style: italic;
 }
 
 // Primary button style inheriting base styles
 .btn-primary {
 	@extend .btn;
-	background-color: #062541ed;
-	color: #43a89e;
+	background-color: #43a89e;
+	color: #ffffff;
 }
 
 // Secondary button style inheriting base styles

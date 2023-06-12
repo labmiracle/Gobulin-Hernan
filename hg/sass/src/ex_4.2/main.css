@@ -1,0 +1,33 @@
+body {
+  font-family: Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(245, 242, 242);
+}
+
+h1 {
+  color: rgba(6, 37, 65, 0.9294117647);
+}
+
+p {
+  color: #43a89e;
+}
+
+.btn, .btn-secondary, .btn-primary {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "Comic Sans MS", cursive;
+  font-style: italic;
+}
+
+.btn-primary {
+  background-color: #43a89e;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #c85049;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

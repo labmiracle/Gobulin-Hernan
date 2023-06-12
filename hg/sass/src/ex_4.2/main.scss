@@ -1,7 +1,3 @@
 @use 'partial_01';
 @use 'partial_02';
-
-body {
-	background-color: $color-primary;
-	color: $color-secondary;
-}
+@use '../ex_4.1/herencia';
