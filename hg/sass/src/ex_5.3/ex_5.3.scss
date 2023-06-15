@@ -1,0 +1,30 @@
+$days-of-week: (monday, tuesday, wednesday, thursday, friday, saturday, sunday);
+
+@function get_days_melody($day) {
+	@if $day == monday {
+		@return 'clásica';
+	} @else if $day == tuesday {
+		@return 'jazz';
+	} @else if $day == wednesday {
+		@return 'rock';
+	} @else if $day == thursday {
+		@return 'flamenco';
+	} @else if $day == friday {
+		@return 'salsa';
+	} @else if $day == saturday {
+		@return 'pop';
+	} @else if $day == sunday {
+		@return 'bossa nova';
+	} @else {
+		@return 'unknown';
+	}
+}
+
+@each $day in $days-of-week {
+	.#{$day} {
+		background-color: get_days_melody(#{$day});
+		color: white;
+		width: 75px;
+		height: 50px;
+	}
+}
