@@ -1,0 +1,31 @@
+$color-mode: light;
+
+@mixin header-styles {
+	display: block;
+	background-color: if($color-mode == 'light', lightgray, darkgray);
+	padding: 10px;
+	color: if($color-mode == 'light', black, white);
+
+	@if $color-mode == 'light' {
+		border: 1px solid black;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	header {
+		@include header-styles;
+		display: none;
+		@if $color-mode == 'dark' {
+			border-bottom: 2px solid white;
+		}
+	}
+
+	section {
+		background-color: if($color-mode == 'light', lightblue, darkblue);
+		padding: 20px;
+		color: if($color-mode == 'light', black, white);
+	}
+}
