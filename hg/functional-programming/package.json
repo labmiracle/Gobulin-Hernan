@@ -1,0 +1,15 @@
+{
+  "name": "functional-programming",
+  "version": "1.0.0",
+  "description": "Functional programming exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8"
+  }
+}
