@@ -1,0 +1,38 @@
+$days-of-week: (
+	Monday: (
+		background-color: lightblue,
+		color: white,
+	),
+	Tuesday: (
+		background-color: lightgreen,
+		color: black,
+	),
+	Wednesday: (
+		background-color: lightyellow,
+		color: black,
+	),
+	Thursday: (
+		background-color: lightpink,
+		color: white,
+	),
+	Friday: (
+		background-color: lightgray,
+		color: black,
+	),
+	Saturday: (
+		background-color: lightsalmon,
+		color: black,
+	),
+	Sunday: (
+		background-color: skyblue,
+		color: white,
+	),
+);
+
+@each $day, $styles in $days-of-week {
+	.#{$day} {
+		@each $property, $value in $styles {
+			#{$property}: $value;
+		}
+	}
+}
