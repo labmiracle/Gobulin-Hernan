@@ -28,3 +28,6 @@ const characters = [
         gender: "male",
     },
 ];
+module.exports = {
+    characters,
+};
