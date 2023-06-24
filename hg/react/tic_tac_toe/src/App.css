@@ -20,7 +20,7 @@ body {
 
 .square {
     background: #1a1a1a;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     float: left;
     font-family: inherit;
     font-size: 1em;
@@ -41,7 +41,7 @@ body {
 }
 
 .status {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .game {
     display: flex;
@@ -49,5 +49,16 @@ body {
 }
 
 .game-info {
-    margin-left: 20px;
+    margin-left: 25px;
+}
+
+button {
+    color: #ffffff;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1a1a1a;
+    border-radius: 3px;
+    border-style: hidden;
 }
