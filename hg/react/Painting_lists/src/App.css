@@ -1,0 +1,25 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+
+		span {
+			margin-right: 10px;
+		}
+
+		button {
+			margin-left: 10px;
+		}
+	}
+}
