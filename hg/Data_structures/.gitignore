@@ -1,0 +1,4 @@
+# Build folder excluded
+build/
+# Node modules folder excluded
+node_modules/
