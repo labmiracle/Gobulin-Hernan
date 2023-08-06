@@ -1,7 +1,6 @@
 import { decimalToBinary, decimalToBase } from "./ToBinaryToBase";
 import { Stack } from "./StackMethods";
 
-// Uso de las funciones
 const stack = new Stack();
 
 console.log("Decimal to Binary:");
