@@ -26,13 +26,8 @@ export class LinkedList {
     add(value: string) {
         const nodo: INodo = new Nodo(value);
 
-        if (!this.head) {
-            this.head = nodo;
-            this.last = nodo;
-        } else {
-            this.last!.next = nodo;
-            this.last = nodo;
-        }
+        this.head ? (this.last!.next = nodo) : (this.head = nodo);
+        this.last = nodo;
 
         this.size++;
     }
@@ -60,15 +55,12 @@ export class LinkedList {
             return null;
         }
 
-        if (!previous) {
-            this.head = current.next;
-        } else {
-            previous.next = current.next;
-        }
-
+        this.head = current === this.head ? current.next : this.head;
         if (current === this.last) {
             this.last = previous;
         }
+
+        previous ? (previous.next = current.next) : (this.head = current.next);
 
         this.size--;
 
