@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "2d325309-eb9d-42cf-8357-9b1ce73dc86d",
+		"name": "MiracleLab_API_Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29007246"
+	},
+	"item": [
+		{
+			"name": "Check health API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/zen",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"zen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check user info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/{{username}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"{{username}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create repo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"MiracleLab_API_Repo\",\r\n    \"private\":true,\r\n    \"auto_init\": true,\r\n    \"gitignore_template\": \"Node\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/user/repos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"repos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an issue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"New logo\",\r\n  \"body\": \"We should have one\",\r\n  \"labels\": []\r\n}\r\n"
+				},
+				"url": {
+					"raw": "{{url}}/repos/:user/:repoName/issues",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"repos",
+						":user",
+						":repoName",
+						"issues"
+					],
+					"variable": [
+						{
+							"key": "user",
+							"value": "hernan-go"
+						},
+						{
+							"key": "repoName",
+							"value": "MiracleLab_API_Repo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete repo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/repos/:owner/:repo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"repos",
+						":owner",
+						":repo"
+					],
+					"variable": [
+						{
+							"key": "owner",
+							"value": "hernan-go"
+						},
+						{
+							"key": "repo",
+							"value": "MiracleLab_API_Repo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "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",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "username",
+			"value": "hernan-go",
+			"type": "string"
+		},
+		{
+			"key": "url",
+			"value": "https://api.github.com",
+			"type": "string"
+		},
+		{
+			"key": "repoName",
+			"value": "githubApiTest",
+			"type": "string"
+		}
+	]
+}
