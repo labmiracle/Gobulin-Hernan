@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-	res.end('Hello, world!');
+	res.end("Hello MiracleLab, we'll see you on Friday at the Happy Hour!");
 });
 
 server.listen(3000, () => {
