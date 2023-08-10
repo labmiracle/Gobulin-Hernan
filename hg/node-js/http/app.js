@@ -11,8 +11,17 @@ const server = http.createServer((req, res) => {
 		res.writeHead(404, { 'Content-Type': 'text/html' });
 		res.end('<h1>404 - File not found</h1>');
 	}
+
+	// console.log('Request received, looks good!');
+	// console.log('Method:', req.method);
+	// console.log('URL:', req.url);
+	// console.log('Headers:', req.headers);
 });
 
-server.listen(3000, () => {
-	console.log('Server is listening on port 3000');
+const port = 3000;
+
+// const port = 5000;
+
+server.listen(port, () => {
+	console.log(`Server is listening on port ${port}`);
 });
