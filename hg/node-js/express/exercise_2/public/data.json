@@ -1,0 +1,36 @@
+{
+	"users": [
+		{
+			"id": 1,
+			"name": "John",
+			"age": 25
+		},
+		{
+			"id": 2,
+			"name": "Mary",
+			"age": 30
+		},
+		{
+			"id": 3,
+			"name": "Michael",
+			"age": 22
+		}
+	],
+	"products": [
+		{
+			"id": 101,
+			"name": "T-shirt",
+			"price": 20.99
+		},
+		{
+			"id": 102,
+			"name": "Pants",
+			"price": 39.99
+		},
+		{
+			"id": 103,
+			"name": "Shoes",
+			"price": 59.99
+		}
+	]
+}
